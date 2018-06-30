@@ -1,0 +1,19 @@
+application: redirect
+version: 1
+# module: redirect
+runtime: php55
+api_version: 1
+threadsafe: true
+
+error_handlers:
+- error_code: over_quota
+  file: over_quota.html
+  
+handlers:
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+  secure: always
+  
+- url: /.*
+  script: index.php
