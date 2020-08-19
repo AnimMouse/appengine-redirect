@@ -1,6 +1,4 @@
 runtime: php73
-api_version: 1
-threadsafe: true
 
 error_handlers:
 - error_code: over_quota
